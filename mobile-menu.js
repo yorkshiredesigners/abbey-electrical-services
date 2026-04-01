@@ -31,19 +31,21 @@
         drawer.appendChild(nav);
 
         // Areas we cover — fills the space between nav and call button
+        var homeLink = document.querySelector('.abbey-nav-menu a');
+        var baseHref = homeLink ? homeLink.getAttribute('href') : './';
         var areaLinks = [
-            { name: 'Hull', href: '/' },
-            { name: 'Beverley', href: '/electrician-beverley/' },
-            { name: 'Cottingham', href: '/electrician-cottingham/' },
-            { name: 'Hessle', href: '/electrician-hessle/' },
-            { name: 'Willerby', href: '/electrician-willerby/' },
-            { name: 'Howden', href: '/electrician-howden/' },
-            { name: 'Goole', href: '/electrician-goole/' },
-            { name: 'Driffield', href: '/electrician-driffield/' },
-            { name: 'Bridlington', href: '/electrician-bridlington/' },
-            { name: 'Hornsea', href: '/electrician-hornsea/' },
-            { name: 'Withernsea', href: '/electrician-withernsea/' },
-            { name: 'Brough', href: '/electrician-brough/' }
+            { name: 'Hull', href: baseHref },
+            { name: 'Beverley', href: baseHref + 'electrician-beverley/' },
+            { name: 'Cottingham', href: baseHref + 'electrician-cottingham/' },
+            { name: 'Hessle', href: baseHref + 'electrician-hessle/' },
+            { name: 'Willerby', href: baseHref + 'electrician-willerby/' },
+            { name: 'Howden', href: baseHref + 'electrician-howden/' },
+            { name: 'Goole', href: baseHref + 'electrician-goole/' },
+            { name: 'Driffield', href: baseHref + 'electrician-driffield/' },
+            { name: 'Bridlington', href: baseHref + 'electrician-bridlington/' },
+            { name: 'Hornsea', href: baseHref + 'electrician-hornsea/' },
+            { name: 'Withernsea', href: baseHref + 'electrician-withernsea/' },
+            { name: 'Brough', href: baseHref + 'electrician-brough/' }
         ];
         var areas = document.createElement('div');
         areas.className = 'abbey-drawer-areas';
