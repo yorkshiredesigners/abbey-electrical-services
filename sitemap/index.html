@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap | Abbey Electrical Services Hull</title>
+    <meta name="description" content="Browse the Abbey Electrical Services sitemap to find electrical services, area pages, customer sectors, case studies and contact information across Hull and East Yorkshire.">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../mobile-menu.js" defer></script>
+    <style>
+        .abbey-sitemap-hero {
+            background: linear-gradient(135deg, #fff 0%, #f7f3ef 52%, #efe7df 100%);
+            border-bottom: 1px solid #eee3d7;
+        }
+        .abbey-sitemap-hero-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 56px 20px 52px;
+            display: grid;
+            grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+            gap: 32px;
+            align-items: center;
+        }
+        .abbey-sitemap-kicker {
+            display: inline-block;
+            background: rgba(215, 25, 25, 0.1);
+            color: #d71919;
+            font: 700 13px Arial, Helvetica, sans-serif;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 8px 12px;
+            border-radius: 999px;
+            margin-bottom: 16px;
+        }
+        .abbey-sitemap-hero h1 {
+            margin: 0 0 16px;
+            color: #d71919;
+            font: 900 46px/1.05 Arial, Helvetica, sans-serif;
+        }
+        .abbey-sitemap-hero p {
+            margin: 0 0 18px;
+            color: #444;
+            font: 400 18px/1.7 Arial, Helvetica, sans-serif;
+            max-width: 720px;
+        }
+        .abbey-sitemap-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 26px;
+        }
+        .abbey-sitemap-btn,
+        .abbey-sitemap-btn-alt {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 48px;
+            padding: 0 18px;
+            border-radius: 4px;
+            text-decoration: none;
+            font: 700 15px Arial, Helvetica, sans-serif;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+        .abbey-sitemap-btn {
+            background: #d71919;
+            color: #fff !important;
+            box-shadow: 0 12px 24px rgba(215, 25, 25, 0.18);
+        }
+        .abbey-sitemap-btn-alt {
+            background: #fff;
+            color: #222 !important;
+            border: 1px solid #e3d7cb;
+        }
+        .abbey-sitemap-btn:hover,
+        .abbey-sitemap-btn-alt:hover {
+            transform: translateY(-1px);
+        }
+        .abbey-sitemap-summary {
+            background: #111;
+            color: #fff;
+            border-radius: 18px;
+            padding: 26px;
+            box-shadow: 0 18px 40px rgba(17, 17, 17, 0.18);
+        }
+        .abbey-sitemap-summary h2 {
+            margin: 0 0 16px;
+            font: 900 24px/1.2 Arial, Helvetica, sans-serif;
+        }
+        .abbey-sitemap-stats {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+        }
+        .abbey-sitemap-stat {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 14px;
+            padding: 16px 14px;
+        }
+        .abbey-sitemap-stat strong {
+            display: block;
+            color: #fff;
+            font: 900 28px/1 Arial, Helvetica, sans-serif;
+            margin-bottom: 6px;
+        }
+        .abbey-sitemap-stat span {
+            color: rgba(255, 255, 255, 0.75);
+            font: 400 13px/1.5 Arial, Helvetica, sans-serif;
+        }
+        .abbey-sitemap-page {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 42px 20px 60px;
+        }
+        .abbey-sitemap-intro {
+            margin-bottom: 28px;
+            color: #555;
+            font: 400 16px/1.8 Arial, Helvetica, sans-serif;
+        }
+        .abbey-sitemap-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px;
+        }
+        .abbey-sitemap-card {
+            background: #fff;
+            border-radius: 16px;
+            border: 1px solid #ece4dc;
+            box-shadow: 0 10px 28px rgba(24, 24, 24, 0.06);
+            padding: 24px;
+        }
+        .abbey-sitemap-card h2 {
+            margin: 0 0 8px;
+            color: #d71919;
+            font: 900 24px/1.2 Arial, Helvetica, sans-serif;
+        }
+        .abbey-sitemap-card p {
+            margin: 0 0 18px;
+            color: #666;
+            font: 400 14px/1.7 Arial, Helvetica, sans-serif;
+        }
+        .abbey-sitemap-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 10px;
+        }
+        .abbey-sitemap-list a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            background: #faf7f4;
+            border: 1px solid #efe7df;
+            border-radius: 12px;
+            padding: 12px 14px;
+            color: #222 !important;
+            text-decoration: none !important;
+            font: 700 15px/1.5 Arial, Helvetica, sans-serif;
+        }
+        .abbey-sitemap-list a::after {
+            content: 'Open';
+            flex-shrink: 0;
+            color: #d71919;
+            font: 700 12px/1 Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+        .abbey-sitemap-list a:hover {
+            border-color: #d71919;
+            background: #fff;
+        }
+        .abbey-sitemap-footer-note {
+            margin-top: 30px;
+            padding: 22px 24px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #d71919 0%, #b61111 100%);
+            color: #fff;
+        }
+        .abbey-sitemap-footer-note h2 {
+            margin: 0 0 8px;
+            color: #fff !important;
+            font: 900 22px/1.2 Arial, Helvetica, sans-serif;
+        }
+        .abbey-sitemap-footer-note p {
+            margin: 0;
+            font: 400 15px/1.7 Arial, Helvetica, sans-serif;
+        }
+        .abbey-sitemap-footer-note a {
+            color: #fff !important;
+            text-decoration: underline !important;
+        }
+        @media (max-width: 900px) {
+            .abbey-sitemap-hero-inner,
+            .abbey-sitemap-grid {
+                grid-template-columns: 1fr;
+            }
+            .abbey-sitemap-hero h1 {
+                font-size: 36px;
+            }
+        }
+        @media (max-width: 600px) {
+            .abbey-sitemap-hero-inner {
+                padding: 42px 16px 40px;
+            }
+            .abbey-sitemap-page {
+                padding: 32px 16px 44px;
+            }
+            .abbey-sitemap-hero h1 {
+                font-size: 30px;
+            }
+            .abbey-sitemap-summary {
+                padding: 20px;
+            }
+            .abbey-sitemap-stats {
+                grid-template-columns: 1fr 1fr;
+            }
+            .abbey-sitemap-card {
+                padding: 20px;
+            }
+            .abbey-sitemap-list a {
+                padding: 11px 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="abbey-header-wrapper">
+    <div class="abbey-top-header">
+        <div class="abbey-header-inner">
+            <div class="abbey-logo">
+                <img src="https://abbeyelectricalservices.co.uk/wp-content/uploads/2015/07/new-logo-abbey1.jpg" alt="Abbey Electrical Services Hull">
+            </div>
+
+            <div class="abbey-contact">
+                <div class="abbey-contact-inner">
+                    <div class="abbey-tagline">
+                        Electrician and electrical installation/maintenance company in Hull &amp; East Yorkshire call:
+                    </div>
+
+                    <div class="abbey-phone-row">
+                        <svg class="abbey-phone-icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 22 2 13.93 2 4a1 1 0 011-1H6.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/>
+                        </svg>
+                        <div class="abbey-phone">
+                            <a href="tel:01482440210">01482 440210</a>
+                        </div>
+                    </div>
+
+                    <div class="abbey-email-row">
+                        <svg class="abbey-email-icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M20 4H4a2 2 0 00-2 2v.01L12 13l10-6.99V6a2 2 0 00-2-2zm0 4.24l-8 5.6-8-5.6V18a2 2 0 002 2h12a2 2 0 002-2V8.24z"/>
+                        </svg>
+                        <div class="abbey-email">
+                            <a href="mailto:info@abbeyelectricalservices.co.uk">info@abbeyelectricalservices.co.uk</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="abbey-navbar">
+        <button class="abbey-menu-toggle" type="button" aria-label="Toggle navigation" onclick="document.querySelector('.abbey-nav-menu').classList.toggle('open')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="abbey-nav-container">
+            <ul class="abbey-nav-menu">
+                <li><a href="../">Home</a></li>
+                <li><a href="../about-us/">About Us</a></li>
+                <li><a href="../services/">Services</a></li>
+                <li><a href="../portfolio/">Portfolio</a></li>
+                <li><a href="../reviews/">Reviews</a></li>
+                <li><a href="../contact-us/">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<section class="abbey-sitemap-hero">
+    <div class="abbey-sitemap-hero-inner">
+        <div>
+            <span class="abbey-sitemap-kicker">Site Navigation</span>
+            <h1>Sitemap</h1>
+            <p>Browse every main page, service, location page, customer sector and featured project on the Abbey Electrical Services website. This page is designed for visitors, while our XML sitemap supports search engines.</p>
+            <div class="abbey-sitemap-actions">
+                <a href="../sitemap.xml" class="abbey-sitemap-btn">View XML Sitemap</a>
+                <a href="../robots.txt" class="abbey-sitemap-btn-alt">Open robots.txt</a>
+                <a href="../contact-us/" class="abbey-sitemap-btn-alt">Contact Us</a>
+            </div>
+        </div>
+
+        <aside class="abbey-sitemap-summary">
+            <h2>Quick Overview</h2>
+            <div class="abbey-sitemap-stats">
+                <div class="abbey-sitemap-stat">
+                    <strong>74</strong>
+                    <span>HTML pages listed including this sitemap page</span>
+                </div>
+                <div class="abbey-sitemap-stat">
+                    <strong>11</strong>
+                    <span>Dedicated area pages for East Yorkshire locations</span>
+                </div>
+                <div class="abbey-sitemap-stat">
+                    <strong>40+</strong>
+                    <span>Service and solution pages for homes and businesses</span>
+                </div>
+                <div class="abbey-sitemap-stat">
+                    <strong>6</strong>
+                    <span>Customer sector pages for the clients we support</span>
+                </div>
+            </div>
+        </aside>
+    </div>
+</section>
+
+<main class="abbey-sitemap-page">
+    <p class="abbey-sitemap-intro">If you are looking for a specific electrical service or area page, the sections below group the site into clear categories so everything is easy to find on both desktop and mobile.</p>
+
+    <div class="abbey-sitemap-grid">
+        <section class="abbey-sitemap-card">
+            <h2>Main Pages</h2>
+            <p>Core navigation pages for the main website journey.</p>
+            <ul class="abbey-sitemap-list">
+                <li><a href="../">Home</a></li>
+                <li><a href="../about-us/">About Us</a></li>
+                <li><a href="../services/">Services</a></li>
+                <li><a href="../portfolio/">Portfolio</a></li>
+                <li><a href="../reviews/">Reviews</a></li>
+                <li><a href="../contact-us/">Contact Us</a></li>
+                <li><a href="../sitemap/">Sitemap</a></li>
+            </ul>
+        </section>
+
+        <section class="abbey-sitemap-card">
+            <h2>Area Pages</h2>
+            <p>Local electrician landing pages for the areas you cover.</p>
+            <ul class="abbey-sitemap-list">
+                <li><a href="../electrician-beverley/">Electrician in Beverley</a></li>
+                <li><a href="../electrician-bridlington/">Electrician in Bridlington</a></li>
+                <li><a href="../electrician-brough/">Electrician in Brough</a></li>
+                <li><a href="../electrician-cottingham/">Electrician in Cottingham</a></li>
+                <li><a href="../electrician-driffield/">Electrician in Driffield</a></li>
+                <li><a href="../electrician-goole/">Electrician in Goole</a></li>
+                <li><a href="../electrician-hessle/">Electrician in Hessle</a></li>
+                <li><a href="../electrician-hornsea/">Electrician in Hornsea</a></li>
+                <li><a href="../electrician-howden/">Electrician in Howden</a></li>
+                <li><a href="../electrician-willerby/">Electrician in Willerby</a></li>
+                <li><a href="../electrician-withernsea/">Electrician in Withernsea</a></li>
+            </ul>
+        </section>
+
+        <section class="abbey-sitemap-card">
+            <h2>Domestic Services</h2>
+            <p>Popular electrical services for homeowners, landlords and property refurbishments.</p>
+            <ul class="abbey-sitemap-list">
+                <li><a href="../additional-sockets-lights/">Additional Sockets &amp; Lights</a></li>
+                <li><a href="../cooker-shower-supplies/">Cooker &amp; Shower Supplies</a></li>
+                <li><a href="../domestic-lighting/">Domestic Lighting</a></li>
+                <li><a href="../domestic-sockets/">Domestic Sockets</a></li>
+                <li><a href="../emergency-callouts/">Emergency Callouts</a></li>
+                <li><a href="../extensions-loft-conversions/">Extensions &amp; Loft Conversions</a></li>
+                <li><a href="../fusebox-consumer-units/">Fusebox | Consumer Units</a></li>
+                <li><a href="../kitchen-bathroom-refurbishment/">Kitchen &amp; Bathroom Refurbishment</a></li>
+                <li><a href="../led-lighting/">LED Lighting</a></li>
+                <li><a href="../outside-power-lighting/">Outside Power &amp; Lighting</a></li>
+                <li><a href="../property-rewires/">Property Rewires</a></li>
+                <li><a href="../repairs-fault-finding/">Repairs &amp; Fault Finding</a></li>
+                <li><a href="../security-lighting/">Security Lighting</a></li>
+                <li><a href="../smoke-detectors/">Smoke Detectors</a></li>
+                <li><a href="../cctv-installation/">CCTV Installation</a></li>
+            </ul>
+        </section>
+
+        <section class="abbey-sitemap-card">
+            <h2>Commercial &amp; Industrial</h2>
+            <p>Electrical installation, maintenance and specialist support for business and industrial environments.</p>
+            <ul class="abbey-sitemap-list">
+                <li><a href="../all-3-phase-work/">All 3 Phase Work</a></li>
+                <li><a href="../cat-5-data-network-cable/">Cat 5 Data Network Cable</a></li>
+                <li><a href="../commercial-lighting/">Commercial Lighting</a></li>
+                <li><a href="../commercial-sockets/">Commercial Sockets</a></li>
+                <li><a href="../contract-works/">Contract Works</a></li>
+                <li><a href="../design-build-projects/">Design &amp; Build Projects</a></li>
+                <li><a href="../electrical-maintenance/">Electrical Maintenance</a></li>
+                <li><a href="../emergency-lighting/">Emergency Lighting</a></li>
+                <li><a href="../facilities-management/">Facilities Management</a></li>
+                <li><a href="../factory-shutdowns/">Factory Shutdowns</a></li>
+                <li><a href="../fire-alarms/">Fire Alarms</a></li>
+                <li><a href="../industrial-factory/">Industrial &amp; Factory</a></li>
+                <li><a href="../machine-supplies-installations/">Machine Supplies</a></li>
+                <li><a href="../power-distribution/">Power Distribution</a></li>
+                <li><a href="../shop-fitting/">Shop Fitting</a></li>
+                <li><a href="../breakdowns/">Breakdowns</a></li>
+            </ul>
+        </section>
+
+        <section class="abbey-sitemap-card">
+            <h2>Testing &amp; Compliance</h2>
+            <p>Inspection, testing, safety reports and ongoing compliance services.</p>
+            <ul class="abbey-sitemap-list">
+                <li><a href="../electrical-condition-report/">Electrical Condition Report</a></li>
+                <li><a href="../electrical-safety-audits/">Electrical Safety Audits</a></li>
+                <li><a href="../electrical-surveys/">Electrical Surveys</a></li>
+                <li><a href="../electrical-testing-help/">Electrical Testing Help</a></li>
+                <li><a href="../emergency-lighting-testing/">Emergency Lighting Testing</a></li>
+                <li><a href="../fire-alarm-testing/">Fire Alarm Testing</a></li>
+                <li><a href="../fixed-wiring-testing/">Fixed Wiring Testing</a></li>
+                <li><a href="../home-buyers-sellers-report/">Home Buyers &amp; Sellers Report</a></li>
+                <li><a href="../pat-testing/">PAT Testing</a></li>
+                <li><a href="../periodic-inspection-testing/">Periodic Inspection &amp; Testing</a></li>
+            </ul>
+        </section>
+
+        <section class="abbey-sitemap-card">
+            <h2>Customer Types</h2>
+            <p>Pages tailored to the sectors and client types Abbey Electrical Services supports.</p>
+            <ul class="abbey-sitemap-list">
+                <li><a href="../builders/">Builders</a></li>
+                <li><a href="../care-home-providers/">Care Home Providers</a></li>
+                <li><a href="../commercial-businesses/">Commercial Businesses</a></li>
+                <li><a href="../estate-agents/">Estate Agents</a></li>
+                <li><a href="../home-owners/">Home Owners</a></li>
+                <li><a href="../landlords/">Landlords</a></li>
+                <li><a href="../property-developers/">Property Developers</a></li>
+            </ul>
+        </section>
+
+        <section class="abbey-sitemap-card">
+            <h2>Featured Projects</h2>
+            <p>Examples of completed work and project-specific pages from across the site.</p>
+            <ul class="abbey-sitemap-list">
+                <li><a href="../barn-installation-power-lighting-mr-howell/">Barn Installation Power &amp; Lighting Mr Howell</a></li>
+                <li><a href="../consumer-unit-replacement-mrs-wellbourne/">Consumer Unit Replacement Mrs Wellbourne</a></li>
+                <li><a href="../electrical-condition-report-bodmin-road-church/">Electrical Condition Report Bodmin Road Church</a></li>
+                <li><a href="../electrical-home-condition-report-mrs-coult/">Electrical Home Condition Report Mrs Coult</a></li>
+                <li><a href="../fire-alarm-servicing-bartle/">Fire Alarm Servicing Bartle</a></li>
+                <li><a href="../lighting-wharehouse-fbf/">Lighting Wharehouse FBF</a></li>
+                <li><a href="../pat-testing-crown-exhibitions/">PAT Testing Crown Exhibitions</a></li>
+                <li><a href="../rewire-mr-mrs-parker/">Rewire Mr &amp; Mrs Parker</a></li>
+                <li><a href="../workshop-power-lighting-john-dunn-fabrication/">Workshop Power &amp; Lighting John Dunn Fabrication</a></li>
+            </ul>
+        </section>
+
+        <section class="abbey-sitemap-card">
+            <h2>Supporting Pages</h2>
+            <p>Additional pages that still matter for users and search engines.</p>
+            <ul class="abbey-sitemap-list">
+                <li><a href="../portfolio/">Portfolio</a></li>
+                <li><a href="../reviews/">Reviews</a></li>
+                <li><a href="../sitemap.xml">XML Sitemap</a></li>
+                <li><a href="../robots.txt">robots.txt</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="abbey-sitemap-footer-note">
+        <h2>Need Help Finding The Right Page?</h2>
+        <p>If you are unsure which service page best matches your job, call <a href="tel:01482440210">01482 440210</a> or head over to the <a href="../contact-us/">contact page</a> and we can point you in the right direction.</p>
+    </div>
+</main>
+
+<div class="abbey-footer">
+    <div class="abbey-footer-inner">
+        <div class="abbey-footer-col abbey-footer-brand">
+            <h4>Contact Details</h4>
+            <div class="abbey-footer-contact-item">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.6 1 1 0 01-.24 1.01l-2.21 2.18z"/></svg>
+                <a href="tel:01482440210">01482 440210</a>
+            </div>
+            <div class="abbey-footer-contact-item">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                <a href="mailto:info@abbeyelectricalservices.co.uk">info@abbeyelectricalservices.co.uk</a>
+            </div>
+            <div class="abbey-footer-contact-item">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg>
+                <span>Hull &amp; East Yorkshire</span>
+            </div>
+            <div class="abbey-footer-contact-item abbey-footer-hours-item">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+                <div class="abbey-footer-hours">
+                    <span class="abbey-footer-hours-title">Opening Hours</span>
+                    <span>Mon – Fri: 8am – 5pm</span>
+                    <span>Sat – Sun: Closed</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="abbey-footer-col">
+            <h4>Main Links</h4>
+            <ul class="abbey-footer-links">
+                <li><a href="../">Home</a></li>
+                <li><a href="../about-us/">About Us</a></li>
+                <li><a href="../services/">Services</a></li>
+                <li><a href="../reviews/">Reviews</a></li>
+                <li><a href="../contact-us/">Contact Us</a></li>
+                <li><a href="../sitemap/">Sitemap</a></li>
+            </ul>
+        </div>
+
+        <div class="abbey-footer-col">
+            <h4>Residential</h4>
+            <ul class="abbey-footer-links">
+                <li><a href="../domestic-lighting/">Domestic Lighting</a></li>
+                <li><a href="../domestic-sockets/">Domestic Sockets</a></li>
+                <li><a href="../fusebox-consumer-units/">Fusebox | Consumer Units</a></li>
+                <li><a href="../repairs-fault-finding/">Repairs | Fault Finding</a></li>
+                <li><a href="../property-rewires/">Property Rewires</a></li>
+            </ul>
+        </div>
+
+        <div class="abbey-footer-col">
+            <h4>Commercial</h4>
+            <ul class="abbey-footer-links">
+                <li><a href="../property-developers/">Property Developers</a></li>
+                <li><a href="../design-build-projects/">Design &amp; Build Projects</a></li>
+                <li><a href="../electrical-safety-audits/">Electrical Safety Audits</a></li>
+                <li><a href="../emergency-callouts/">Emergency Callouts</a></li>
+                <li><a href="../electrical-maintenance/">Electrical Maintenance</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="abbey-footer-bottom">
+        <div style="max-width:1200px;margin:0 auto;">
+            <p>&copy; 2025 Abbey Electrical Services Hull Ltd. All rights reserved. | <a href="#">Privacy Policy</a></p>
+            <p style="margin-top:6px;">Web Design by <a href="#">Alpha Web Design Hull</a> | SEO by <a href="#">SEO Hull</a></p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
