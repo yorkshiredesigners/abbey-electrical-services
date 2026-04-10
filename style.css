@@ -57,6 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 .abbey-logo img{
     max-width:420px;
     height:auto;
+    display:block;
 }
 
 .abbey-logo a{
@@ -578,11 +579,14 @@ h1, h2, h3, h4, h5, h6 {
     position:relative;
     width:100%;
     overflow:hidden;
+    aspect-ratio:960 / 450;
+    background:#111;
 }
 .abbey-hero img.abbey-hero-img {
     width:100%;
-    height:auto;
+    height:100%;
     display:block;
+    object-fit:cover;
 }
 .abbey-hero-text {
     position:absolute;
@@ -659,6 +663,14 @@ h1, h2, h3, h4, h5, h6 {
     background:#222;
 }
 @media(max-width:768px){
+    .abbey-hero {
+        aspect-ratio:auto;
+        background:#fff;
+    }
+    .abbey-hero img.abbey-hero-img {
+        aspect-ratio:960 / 450;
+        height:auto;
+    }
     .abbey-hero-text {
         position:relative;
         max-width:100%;
@@ -677,6 +689,10 @@ h1, h2, h3, h4, h5, h6 {
         width:100%;
         box-sizing:border-box;
     }
+    .abbey-breadcrumb {
+        font-size:13px;
+        margin-bottom:18px;
+    }
 }
 
 .abbey-services-wrapper {
@@ -685,6 +701,29 @@ h1, h2, h3, h4, h5, h6 {
     background:#fff;
     padding:60px 20px;
     box-sizing:border-box;
+}
+
+.abbey-breadcrumb {
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:8px;
+    margin:0 0 24px;
+    color:#555;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    font-weight:700;
+}
+.abbey-breadcrumb a {
+    color:#d71919;
+    text-decoration:none;
+}
+.abbey-breadcrumb a:hover {
+    color:#111;
+    text-decoration:none;
+}
+.abbey-breadcrumb span[aria-current="page"] {
+    color:#111;
 }
 
 .abbey-services-heading {

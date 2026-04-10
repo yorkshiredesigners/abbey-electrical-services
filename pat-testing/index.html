@@ -135,6 +135,63 @@
             }
         }
     </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Electrician",
+      "@id": "https://abbeyelectricalservices.co.uk/#localbusiness",
+      "name": "Abbey Electrical Services (Hull) Ltd",
+      "url": "https://abbeyelectricalservices.co.uk/",
+      "image": "https://abbeyelectricalservices.co.uk/images/abbey%20electrical%20services%20logo.jpg",
+      "logo": "https://abbeyelectricalservices.co.uk/images/abbey%20electrical%20services%20logo.jpg",
+      "description": "Electrician in Hull, England providing electrical installation, maintenance, testing and repairs across Hull and East Yorkshire.",
+      "telephone": "+44 7880 697967",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "304 Park Ave W",
+        "addressLocality": "Hull",
+        "addressRegion": "England",
+        "postalCode": "HU5 4DQ",
+        "addressCountry": "GB"
+      },
+      "areaServed": [
+        "Hull",
+        "East Yorkshire"
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "17:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "1"
+      }
+    }
+    </script>
+
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://abbeyelectricalservices.co.uk/"},
+        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://abbeyelectricalservices.co.uk/services/"},
+        {"@type": "ListItem", "position": 3, "name": "PAT Testing", "item": "https://abbeyelectricalservices.co.uk/pat-testing/"}
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -142,7 +199,7 @@
     <div class="abbey-top-header">
         <div class="abbey-header-inner">
             <div class="abbey-logo">
-                <img src="../images/abbey electrical services logo.jpg" alt="Abbey Electrical Services Hull">
+                <img src="../images/abbey electrical services logo.webp" alt="Abbey Electrical Services Hull" width="415" height="198" decoding="async">
             </div>
 
             <div class="abbey-contact">
@@ -195,6 +252,13 @@
 
 
 <div class="abbey-service-page-wrapper">
+    <nav class="abbey-breadcrumb" aria-label="Breadcrumb">
+        <a href="../">Home</a>
+        <span>/</span>
+        <a href="../services/">Services</a>
+        <span>/</span>
+        <span aria-current="page">PAT Testing</span>
+    </nav>
     <div class="abbey-service-page-inner">
 
         <div class="abbey-service-content">
@@ -330,7 +394,7 @@
             </div>
         </div>
         <div class="abbey-areas-right">
-            <img src="../images/humber-bridge.webp" alt="Hull Humber Bridge">
+            <img src="../images/humber-bridge.webp" alt="Hull Humber Bridge" width="1280" height="1600" decoding="async" loading="lazy">
         </div>
     </div>
 </div>
